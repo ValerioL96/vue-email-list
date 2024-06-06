@@ -13,9 +13,9 @@
 
     <div id="app">
 
-        <ul>
+        <ul v-if="emailList.length >=10">
             <li v-for="(item, index) in emailList" :key="index">
-                {{item.response}}
+                {{item}}
             </li>
         </ul>
 
